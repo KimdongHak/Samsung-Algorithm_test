@@ -1,3 +1,5 @@
+// Dijkstra-Algorithm C Code
+
 #include <stdio.h>
 
 #define N 100
