@@ -1,6 +1,13 @@
 #include<iostream>
+using namespace std;
 
 int main() {
-	std::cout << "hello";
-	return 0;
+	string a;
+//	std::cout << "hello\n";
+	int t;
+	while (true) {
+		std::cin >> t;
+		std::cout << "input :: " << t << std::endl;
+		if (t == 0) break;
+	}
 }
