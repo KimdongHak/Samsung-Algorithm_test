@@ -1,4 +1,5 @@
-﻿#include<iostream>
+// wrong answer
+#include<iostream>
 using namespace std;
 int main() {
 	int a, b;
