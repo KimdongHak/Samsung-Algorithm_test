@@ -23,13 +23,3 @@ int main() {
 			}
 		}
 	}
-=======
-	int a, b;
-	double total;
-	std::cin >> a;
-	std::cin >> b;
-	total = (double)a / (double)b;
-	cout.precision(9);
-	std::cout << total << std::endl;
->>>>>>> a75c8c541132ad9e744ce7a3e4c2968d32d0f705
-}
