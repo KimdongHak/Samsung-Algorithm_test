@@ -1,4 +1,4 @@
-ï»¿#include <algorithm>
+#include <algorithm>
 #include <iostream>
 #include <vector>
 
@@ -12,7 +12,7 @@ void print(Iter begin, Iter end) {
 }
 int main() {
 	std::vector<int> vec;
-	vec.push_back(8);
+	vec.push_back(5);
 	vec.push_back(3);
 	vec.push_back(1);
 	vec.push_back(6);
@@ -20,10 +20,10 @@ int main() {
 	vec.push_back(7);
 	vec.push_back(2);
 
-	std::cout << "ì •ë ¬ ì „ ----" << std::endl;
+	std::cout << "Á¤·Ä Àü ----" << std::endl;
 	print(vec.begin(), vec.end());
 	std::sort(vec.begin(), vec.end());
 
-	std::cout << "ì •ë ¬ í›„ ----" << std::endl;
+	std::cout << "Á¤·Ä ÈÄ ----" << std::endl;
 	print(vec.begin(), vec.end());
 }
