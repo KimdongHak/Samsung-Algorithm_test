@@ -1,4 +1,4 @@
-﻿#include<iostream>
+#include<iostream>
 #include<string.h>
 using namespace std;
 int t = 0; // testcase
@@ -23,7 +23,7 @@ int main() {
 	string voca[100];
 	string pattern;
 	char cont(97);
-	while (cont!='N') {
+	while (cont != 'N') {
 		cin >> pattern;
 		cin >> t;
 		for (int i = 0; i < t; i++)
