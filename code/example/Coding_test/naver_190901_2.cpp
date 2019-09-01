@@ -7,3 +7,18 @@
 ex) N=4 ∏È output = [-3,-2,2,3]
  N=3¿Ã∏È output = [-2,0,2]
 */
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+vector<int> solution{
+
+}
+
+int main() {
+	int N;
+	cin >> N;
+	solution(N);
+	return 0;
+}
