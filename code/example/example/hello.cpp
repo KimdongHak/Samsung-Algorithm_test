@@ -1,50 +1,31 @@
 ﻿/*
-입력이 N이 주어지면
-그에 따른 값 배열을 구하라 - Vector 사용 필수
-그리고 N만큼 값의 개수를 만들어라.
-그리고 배열안에 값의 합을 0이 되게 만들어라.
-
-ex) N=4 면 output = [-3,-2,2,3]
- N=3이면 output = [-2,0,2]
+준규가 사는 나라는 우리가 사용하는 연도와 다른 방식을 이용한다. 준규가 사는 나라에서는 수 3개를 이용해서 연도를 나타낸다. 각각의 수는 지구, 태양, 그리고 달을 나타낸다.
+지구를 나타내는 수를 E, 태양을 나타내는 수를 S, 달을 나타내는 수를 M이라고 했을 때, 이 세 수는 서로 다른 범위를 가진다. (1 ≤ E ≤ 15, 1 ≤ S ≤ 28, 1 ≤ M ≤ 19)
+우리가 알고있는 1년은 준규가 살고있는 나라에서는 1 1 1로 나타낼 수 있다. 1년이 지날 때마다, 세 수는 모두 1씩 증가한다. 만약, 어떤 수가 범위를 넘어가는 경우에는 1이 된다.
+예를 들어, 15년은 15 15 15로 나타낼 수 있다. 하지만, 1년이 지나서 16년이 되면 16 16 16이 아니라 1 16 16이 된다. 이유는 1 ≤ E ≤ 15 라서 범위를 넘어가기 때문이다.
+E, S, M이 주어졌고, 1년이 준규가 사는 나라에서 1 1 1일때, 준규가 사는 나라에서 E S M이 우리가 알고 있는 연도로 몇 년인지 구하는 프로그램을 작성하시오.
 */
 
-#include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
+#include<iostream>
 using namespace std;
-vector<int> solution(int N){
-	vector<int> result;
-	int sum=0;
-	int ran_num = 0;
-	if (abs(N) % 2 == 0) {
-		for (int i = 0; i < N; i++) {
-
-			ran_num = rand() % N - N+1;
-			result.push_back(ran_num);
-			if (ran_num < 0) {
-				result.push_back(abs(ran_num));
-				cout << "abs even number" << abs(ran_num)<< endl;
-			}
-			else if (ran_num > 0) {
-				result.push_back(ran_num - ran_num * 2);
-				cout << "abs even number" << ran_num -ran_num*2<< endl;
-
-			}
-			cout << "even number" << ran_num << endl;
-		}
-	
-	}
-	else {
-		cout << "odd number" << endl;
-	}
-	cout << N << endl;
-	return result;
-}
-
 int main() {
-	int N;
-	cin >> N;
-	solution(N);
+	int E, S, M;
+	cin >> E >> S >> M;
+	int e = 1, s = 1, m = 1;
+	for (int i = 1;; i++) {
+		if (e == E && s == S && m == M) {
+			cout << i << '\n';
+			break;
+		}
+		e += 1;
+		s += 1;
+		m += 1;
+		if (e == 16)
+			e = 1;
+		if (s == 29)
+			s = 1;
+		if (m == 20)
+			m = 1;
+	}
 	return 0;
 }
