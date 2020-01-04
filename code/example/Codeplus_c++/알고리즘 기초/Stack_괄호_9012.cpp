@@ -22,5 +22,16 @@ string valid(string s) {
 	}
 }
 int main() {
+	int t = 0; // testcase
+	string sen[100];
+	string input;
+	cin >> t;
+	for (int i = 0; i < t; i++) {
+		cin >> input;
+		sen[i] = valid(input);
+	}
+	for (int i = 0; i < t; i++) {
+		cout << sen[i] << '\n';
+	}
 
 }
