@@ -1,4 +1,4 @@
-ï»¿#include<iostream>
+#include<iostream>
 using namespace std;
 string valid(string s) {
 	int cnt = 0;
@@ -10,15 +10,15 @@ string valid(string s) {
 			cnt -= 1;
 		}
 		if (cnt < 0) {
-			return "NO"; // ì—¬ëŠ” ê´„í˜¸ ë¶€ì¡±
+			return "NO"; // ¿©´Â °ýÈ£ ºÎÁ·
 		}
 	}
-	//ëª¨ë“  ê³¼ì • ë
+	//¸ðµç °úÁ¤ ³¡
 	if (cnt == 0) {
-		return "YES"; // ìŠ¤íƒì´ ë¹„ì–´ìžˆë‹¤.
+		return "YES"; // ½ºÅÃÀÌ ºñ¾îÀÖ´Ù.
 	}
 	else {
-		return "NO"; //ìŠ¤íƒì´ ë¹„ì–´ìžˆì§€ ì•Šë‹¤. = ë‹«ëŠ”ê´„í˜¸ê°€ ë¶€ì¡±
+		return "NO"; //½ºÅÃÀÌ ºñ¾îÀÖÁö ¾Ê´Ù. = ´Ý´Â°ýÈ£°¡ ºÎÁ·
 	}
 }
 int main() {
