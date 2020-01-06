@@ -1,37 +1,43 @@
 ﻿#include<iostream>
+#include<string>
+#include<cstring>
 using namespace std;
-string valid(string s) {
+string convert(string s) {
 	int cnt = 0;
+	string str_s;
+	string stack[100]; //stack 배열
 	for (int i = 0; i < s.size(); i++) {
-		if (s[i] == '(') {
-			cnt += 1;
+		stack[cnt] = s[i];
+		cout << "stack:: "<<stack << '\n';
+		if (s[i] == ' ') {
+			cout << "cnt :: " << cnt << '\n';
+			for (int i = cnt; i > -1; i--) {
+				
+				
+				str_s = str_s + stack[cnt];
+				cout << "str_s :: " << str_s << '\n';
+				cnt -= 1;
+			}
 		}
 		else {
-			cnt -= 1;
-		}
-		if (cnt < 0) {
-			return "NO"; // 여는 괄호 부족
+			cnt += 1;
 		}
 	}
-	//모든 과정 끝
-	if (cnt == 0) {
-		return "YES"; // 스택이 비어있다.
-	}
-	else {
-		return "NO"; //스택이 비어있지 않다. = 닫는괄호가 부족
-	}
+	cout << str_s << '\n';
+	return str_s;
 }
 int main() {
 	int t = 0; // testcase
-	string sen[100];
-	string input;
+	string str;
+	string print[100];
 	cin >> t;
+	cin.ignore();
 	for (int i = 0; i < t; i++) {
-		cin >> input;
-		sen[i] = valid(input);
+		getline(cin, str);
+		print[i] = convert(str);
 	}
 	for (int i = 0; i < t; i++) {
-		cout << sen[i] << '\n';
+		cout << print[i] << '\n';
 	}
 	
 }
