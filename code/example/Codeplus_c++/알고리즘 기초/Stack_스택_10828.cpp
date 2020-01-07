@@ -1,51 +1,51 @@
-ï»¿#include<iostream>
+#include<iostream>
 #include<string>
 #include<algorithm>
 using namespace std;
-int cnt=0;
+int cnt = 0;
 int result[50] = { 0, };
 int buf[50] = { 0, };
 int stack(string s) {
-	int push_value = 0, pop_value = 0, size=0;
-	//pop ê¸°ëŠ¥
+	int push_value = 0, pop_value = 0, size = 0;
+	//pop ±â´É
 	if (s.find("pop") != string::npos) {
 		if (cnt <= 0) {
-			cout << "stackì´ ì—†ìŠµë‹ˆë‹¤." << endl;
+			cout << "stackÀÌ ¾ø½À´Ï´Ù." << endl;
 			cnt = -1;
 			return cnt;
 		}
 		else {
 			pop_value = buf[0];
 
-			//stack ê°’ ì´ë™
+			//stack °ª ÀÌµ¿
 			for (int i = 0; i < cnt; i++) {
 				buf[i] = buf[i + 1];
 			}
 			cnt -= 1;
 		}
-//		cout << "remain stack :: " << endl;
+		//		cout << "remain stack :: " << endl;
 		for (int i = 0; i < cnt; i++) {
-//			cout << "index " <<i << " "<<buf[i] << endl;
+			//			cout << "index " <<i << " "<<buf[i] << endl;
 		}
 		return pop_value;
 	}
-	// top ì¶œë ¥
+	// top Ãâ·Â
 	if (s.find("top") != string::npos) {
 		if (cnt == -1) {
 			return cnt;
 		}
 		return buf[0];
 	}
-	//size ì¶œë ¥
+	//size Ãâ·Â
 	if (s.find("size") != string::npos) {
 		return cnt;
 	}
 
-	// push ê¸°ëŠ¥
+	// push ±â´É
 	if (s.find("push") != string::npos) {
 		push_value = atoi(s.substr(5).c_str());
 		for (int i = cnt; i > 0; i--) {
-			buf[i] = buf[i-1];
+			buf[i] = buf[i - 1];
 		}
 		buf[0] = push_value;
 		cnt += 1;
@@ -68,7 +68,7 @@ int main() {
 	cin.ignore();
 	for (int i = 0; i < t; i++) {
 		getline(cin, str);
-		result[i]=stack(str);
+		result[i] = stack(str);
 	}
 	for (int i = 0; i < t; i++) {
 		cout << result[i] << endl;
