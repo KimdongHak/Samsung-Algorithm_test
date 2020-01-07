@@ -1,12 +1,12 @@
-ï»¿// Samsung SW Test 2020-01-07 No.1 ì§„ìš©ì´ë„¤ ì£¼ì°¨íƒ€ì›Œ
+// Samsung SW Test 2020-01-07 No.1 Áø¿ëÀÌ³× ÁÖÂ÷Å¸¿ö
 /*
-	   ì•„ëž˜ì˜ freopen í•¨ìˆ˜ëŠ” input.txt ë¥¼ read only í˜•ì‹ìœ¼ë¡œ ì—° í›„,
-	   ì•žìœ¼ë¡œ í‘œì¤€ ìž…ë ¥(í‚¤ë³´ë“œ) ëŒ€ì‹  input.txt íŒŒì¼ë¡œë¶€í„° ì½ì–´ì˜¤ê² ë‹¤ëŠ” ì˜ë¯¸ì˜ ì½”ë“œìž…ë‹ˆë‹¤.
-	   //ì—¬ëŸ¬ë¶„ì´ ìž‘ì„±í•œ ì½”ë“œë¥¼ í…ŒìŠ¤íŠ¸ í•  ë•Œ, íŽ¸ì˜ë¥¼ ìœ„í•´ì„œ input.txtì— ìž…ë ¥ì„ ì €ìž¥í•œ í›„,
-	   freopen í•¨ìˆ˜ë¥¼ ì´ìš©í•˜ë©´ ì´í›„ cin ì„ ìˆ˜í–‰í•  ë•Œ í‘œì¤€ ìž…ë ¥ ëŒ€ì‹  íŒŒì¼ë¡œë¶€í„° ìž…ë ¥ì„ ë°›ì•„ì˜¬ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
-	   ë”°ë¼ì„œ í…ŒìŠ¤íŠ¸ë¥¼ ìˆ˜í–‰í•  ë•Œì—ëŠ” ì•„ëž˜ ì£¼ì„ì„ ì§€ìš°ê³  ì´ í•¨ìˆ˜ë¥¼ ì‚¬ìš©í•˜ì…”ë„ ì¢‹ìŠµë‹ˆë‹¤.
-	   freopen í•¨ìˆ˜ë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ì„œëŠ” #include <cstdio>, í˜¹ì€ #include <stdio.h> ê°€ í•„ìš”í•©ë‹ˆë‹¤.
-	   ë‹¨, ì±„ì ì„ ìœ„í•´ ì½”ë“œë¥¼ ì œì¶œí•˜ì‹¤ ë•Œì—ëŠ” ë°˜ë“œì‹œ freopen í•¨ìˆ˜ë¥¼ ì§€ìš°ê±°ë‚˜ ì£¼ì„ ì²˜ë¦¬ í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.
+	   ¾Æ·¡ÀÇ freopen ÇÔ¼ö´Â input.txt ¸¦ read only Çü½ÄÀ¸·Î ¿¬ ÈÄ,
+	   ¾ÕÀ¸·Î Ç¥ÁØ ÀÔ·Â(Å°º¸µå) ´ë½Å input.txt ÆÄÀÏ·ÎºÎÅÍ ÀÐ¾î¿À°Ú´Ù´Â ÀÇ¹ÌÀÇ ÄÚµåÀÔ´Ï´Ù.
+	   //¿©·¯ºÐÀÌ ÀÛ¼ºÇÑ ÄÚµå¸¦ Å×½ºÆ® ÇÒ ¶§, ÆíÀÇ¸¦ À§ÇØ¼­ input.txt¿¡ ÀÔ·ÂÀ» ÀúÀåÇÑ ÈÄ,
+	   freopen ÇÔ¼ö¸¦ ÀÌ¿ëÇÏ¸é ÀÌÈÄ cin À» ¼öÇàÇÒ ¶§ Ç¥ÁØ ÀÔ·Â ´ë½Å ÆÄÀÏ·ÎºÎÅÍ ÀÔ·ÂÀ» ¹Þ¾Æ¿Ã ¼ö ÀÖ½À´Ï´Ù.
+	   µû¶ó¼­ Å×½ºÆ®¸¦ ¼öÇàÇÒ ¶§¿¡´Â ¾Æ·¡ ÁÖ¼®À» Áö¿ì°í ÀÌ ÇÔ¼ö¸¦ »ç¿ëÇÏ¼Åµµ ÁÁ½À´Ï´Ù.
+	   freopen ÇÔ¼ö¸¦ »ç¿ëÇÏ±â À§ÇØ¼­´Â #include <cstdio>, È¤Àº #include <stdio.h> °¡ ÇÊ¿äÇÕ´Ï´Ù.
+	   ´Ü, Ã¤Á¡À» À§ÇØ ÄÚµå¸¦ Á¦ÃâÇÏ½Ç ¶§¿¡´Â ¹Ýµå½Ã freopen ÇÔ¼ö¸¦ Áö¿ì°Å³ª ÁÖ¼® Ã³¸® ÇÏ¼Å¾ß ÇÕ´Ï´Ù.
 	*/
 #include<iostream>
 #include<vector>
@@ -29,13 +29,13 @@ int main() {
 		result = 0;
 		cin >> n >> m;
 
-		// R_iëŠ” ë‹¨ìœ„ ë¬´ê²Œë‹¹ ìš”ê¸ˆ, nê°œì˜ ì°¨ëŸ‰ê³µê°„
+		// R_i´Â ´ÜÀ§ ¹«°Ô´ç ¿ä±Ý, n°³ÀÇ Â÷·®°ø°£
 		for (int i = 0; i < n; i++) {
 
 			cin >> R_i[i];
 			bR_i[i] = false;
 		}
-		// W_i ì°¨ëŸ‰ì˜ ë¬´ê²Œ 
+		// W_i Â÷·®ÀÇ ¹«°Ô 
 		for (int i = 0; i < m; i++) {
 			cin >> W_i[i];
 		}
@@ -43,9 +43,9 @@ int main() {
 		for (int i = 0; i < (2 * m); i++) {
 
 			cin >> x;
-			//ì°¨ê°€ ë“¤ì–´ì˜¬ ë•Œ
+			//Â÷°¡ µé¾î¿Ã ¶§
 			if (x > 0) {
-				// ì•„ì§ ì£¼ì°¨ëª»í•œ ì°¨ëŸ‰ì´ ì—†ëŠ” ê²½ìš°
+				// ¾ÆÁ÷ ÁÖÂ÷¸øÇÑ Â÷·®ÀÌ ¾ø´Â °æ¿ì
 				if (remain.size() == 0) {
 					for (int i = 0; i < n; i++) {
 						if (bR_i[i] == false) {
@@ -55,22 +55,22 @@ int main() {
 							break;
 						}
 						else {
-							// ì£¼ì°¨ê³µê°„ì´ ë§Œì°¨ì¼ ê²½ìš°
+							// ÁÖÂ÷°ø°£ÀÌ ¸¸Â÷ÀÏ °æ¿ì
 							if (i == (n - 1)) {
 								remain.push_back(x);
 							}
 						}
 					}
 				}
-				// ì£¼ì°¨ ëª»í•œ ì°¨ëŸ‰ì´ ìžˆëŠ” ê²½ìš°
+				// ÁÖÂ÷ ¸øÇÑ Â÷·®ÀÌ ÀÖ´Â °æ¿ì
 				else {
 					remain.push_back(x);
 				}
 			}
 
-			//ì°¨ê°€ ë‚˜ê°ˆ ë•Œ
+			//Â÷°¡ ³ª°¥ ¶§
 			if (x < 0) {
-				// ì ˆëŒ€ê°’ ë³€í˜•
+				// Àý´ë°ª º¯Çü
 				x = abs(x);
 				if (remain.size() == 0) {
 					for (int i = 0; i < n; i++) {
