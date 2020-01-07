@@ -1,5 +1,6 @@
 ﻿#include<iostream>
-using namespace std;
+#include<string>
+using namespace std; 
 string valid(string s) {
 	int cnt = 0;
 	for (int i = 0; i < s.size(); i++) {
@@ -26,12 +27,13 @@ int main() {
 	string sen[100];
 	string input;
 	cin >> t;
+	cin.ignore();
 	for (int i = 0; i < t; i++) {
-		cin >> input;
+		getline(cin, input);
 		sen[i] = valid(input);
 	}
 	for (int i = 0; i < t; i++) {
 		cout << sen[i] << '\n';
 	}
-	
+
 }
