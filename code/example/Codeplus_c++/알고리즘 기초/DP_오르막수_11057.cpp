@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 long long d[1001][10];
 long long mod = 10007;
