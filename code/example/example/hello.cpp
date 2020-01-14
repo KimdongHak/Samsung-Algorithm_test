@@ -1,21 +1,17 @@
 ﻿#include<iostream>
 #include<algorithm>
 using namespace std;
-int N[1001][3];
-int d[1001][3];
+int d[100001][3];
 int main() {
 	ios_base::sync_with_stdio(false);
-	int testcase;
-	cin >> testcase;
-	for (int i = 1; i <= testcase; i++)
-		for (int color = 0; color < 3; color++)
-			cin >> N[i][color];
-
-	for (int i = 1; i <= testcase; i++) {
-		d[i][0] = min(d[i - 1][1], d[i - 1][2]) + N[i][0];
-		d[i][1] = min(d[i - 1][0], d[i - 1][2]) + N[i][1];
-		d[i][2] = min(d[i - 1][0], d[i - 1][1]) + N[i][2];
+	int N;
+	cin >> N;
+	d[0][0] = 1;
+	for (int i = 1; i <= N; i++) {
+		d[i][0] = d[i - 1][0] + d[i - 1][1] + d[i - 1][2]; // 배치 X
+		d[i][1] = d[i - 1][0] + d[i - 1][2]; // 왼쪽에 배치
+		d[i][2] = d[i - 1][0] + d[i - 1][1]; // 오른쪽에 배치
 	}
-	cout << min({ d[testcase][0],d[testcase][1],d[testcase][2] }) << endl;
+	cout << (d[N][0] + d[N][1] + d[N][2])%9901 << endl;
 	return 0;
 }
