@@ -1,4 +1,4 @@
-﻿#include<iostream>
+#include<iostream>
 using namespace std;
 long long d[1000001];
 const long long mod = 1000000009LL;
@@ -16,16 +16,16 @@ int main() {
         }
         d[i] %= mod;
     }
-	int testcase = 0;
-	int result = 0;
-	cin >> testcase;
+    int testcase = 0;
+    int result = 0;
+    cin >> testcase;
     int* R = new int[testcase];
-	for (int i = 0; i < testcase; i++) {
-		int n = 0; //n 입력
-		cin >> n;
+    for (int i = 0; i < testcase; i++) {
+        int n = 0; //n �Է�
+        cin >> n;
         R[i] = n;
 
-	}
-    for (int i=0;i<testcase;i++)
+    }
+    for (int i = 0; i < testcase; i++)
         cout << d[R[i]] << endl;
 }
