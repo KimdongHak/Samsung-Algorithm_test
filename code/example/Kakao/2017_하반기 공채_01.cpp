@@ -1,4 +1,4 @@
-﻿#include <string>
+#include <string>
 #include <vector>
 #include<iostream>
 
@@ -29,7 +29,7 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
     return answer;
 }
 int main() {
-    
+
     int n = 0;
     vector<int> arr1;
     vector<int> arr2;
