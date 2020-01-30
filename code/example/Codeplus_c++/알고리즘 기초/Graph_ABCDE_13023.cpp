@@ -1,15 +1,15 @@
-ï»¿#include<iostream>
+#include<iostream>
 #include<algorithm>
 #include<vector>
 using namespace std;
 
-bool a[2000][2000]; // ì¸ì ‘í–‰ë ¬
-vector<int> g[2000]; // ì¸ì ‘ë¦¬ìŠ¤íŠ¸
-vector<pair<int, int>> edges; // ê°„ì„ ë¦¬ìŠ¤íŠ¸
+bool a[2000][2000]; // ÀÎÁ¢Çà·Ä
+vector<int> g[2000]; // ÀÎÁ¢¸®½ºÆ®
+vector<pair<int, int>> edges; // °£¼±¸®½ºÆ®
 
 int main() {
 
-	//ì‚¬ëŒì˜ ìˆ˜ N, ê´€ê³„ ìˆ˜ M
+	//»ç¶÷ÀÇ ¼ö N, °ü°è ¼ö M
 	int N, M;
 	cin >> N >> M;
 
@@ -27,7 +27,7 @@ int main() {
 
 	for (int i = 0; i < M; i++) {
 		for (int j = 0; j < M; j++) {
-	
+
 			int A = edges[i].first;
 			int B = edges[i].second;
 
