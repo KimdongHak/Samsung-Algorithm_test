@@ -27,18 +27,20 @@ int main() {
 
 	for (int i = 0; i < M; i++) {
 		for (int j = 0; j < M; j++) {
-
+			//A --> B
 			int A = edges[i].first;
 			int B = edges[i].second;
-
+			// C--> D
 			int C = edges[j].first;
 			int D = edges[j].second;
 			if (A == B || A == C || A == D || B == C || B == D || C == D) {
 				continue;
 			}
+			//B-->C
 			if (!a[B][C]) {
 				continue;
 			}
+			//D-->E
 			for (int E : g[D]) {
 				if (A == E || B == E || C == E || D == E) {
 					continue;
