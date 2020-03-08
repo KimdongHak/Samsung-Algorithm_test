@@ -1,4 +1,4 @@
-ï»¿#include <cstdio>
+#include <cstdio>
 #include <vector>
 #include <algorithm>
 #include <iostream>
@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    //2ì°¨ì› ë°°ì—´ ìƒì„±
+    //2Â÷¿ø ¹è¿­ »ı¼º
     int** cost = new int* [n];
     for (int i = 0; i < n; ++i) {
         cost[i] = new int[n];
