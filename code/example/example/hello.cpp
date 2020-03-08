@@ -5,24 +5,16 @@ using namespace std;
 
 int main() {
 	int n;
-	int cnt = 0;
 	cin >> n;
 	vector <int> v(n);
 	for (int i = 0; i < n; i++) {
-		cin >> v[i];
+		v[i]=i+1;
 	}
 	do {
-		cnt += 1;
-		if (cnt == 2) {
-			for (int i = 0; i < n; i++) {
-				cout << v[i] << " ";
-			}
-			cout << endl;
-			break;
+		for (int i = 0; i < n; i++) {
+			cout << v[i] << " ";
 		}
-	} while (prev_permutation(v.begin(), v.end()));
-	if (cnt == 1) {
-		cout << "-1";
-	}
+		cout << '\n';
+	} while (next_permutation(v.begin(), v.end()));
 	return 0;
 }
