@@ -1,10 +1,10 @@
-ï»¿// ì¹´ì¹´ì˜¤ ì½”ë“œ í˜ìŠ¤í‹°ë²Œ ì˜ˆì„  - ìƒê¸ˆí—Œí„°_15953.cpp
+// Ä«Ä«¿À ÄÚµå Æä½ºÆ¼¹ú ¿¹¼± - »ó±İÇåÅÍ_15953.cpp
 #include<iostream>
 #include<vector>
 #include<utility>
 using namespace std;
 int main() {
-	int t, buf1, buf2, m1=0, m2=0;
+	int t, buf1, buf2, m1 = 0, m2 = 0;
 	cin >> t;
 
 	vector <pair <int, int>> grade;
@@ -17,9 +17,9 @@ int main() {
 	}
 	int i = 0;
 	vector<pair<int, int>>::iterator it;
-	for (it = grade.begin(); it !=grade.end(); it++) {
+	for (it = grade.begin(); it != grade.end(); it++) {
 
-		// 1íšŒ ëŒ€íšŒ
+		// 1È¸ ´ëÈ¸
 		if (it->first == 1) { m1 = 500; }
 		else if (it->first >= 2 && it->first < 4) { m1 = 300; }
 		else if (it->first >= 4 && it->first < 7) { m1 = 200; }
@@ -28,11 +28,11 @@ int main() {
 		else if (it->first >= 16 && it->first < 22) { m1 = 10; }
 		else { m1 = 0; }
 
-		// 2íšŒ ëŒ€íšŒ
+		// 2È¸ ´ëÈ¸
 		if (it->second == 1) { m2 = 512; }
 		else if (it->second >= 2 && it->second < 4) { m2 = 256; }
 		else if (it->second >= 4 && it->second < 8) { m2 = 128; }
-		else if (it->second >= 8 && it->second < 16) { m2 = 64;	}
+		else if (it->second >= 8 && it->second < 16) { m2 = 64; }
 		else if (it->second >= 16 && it->second < 33) { m2 = 32; }
 		else { m2 = 0; }
 

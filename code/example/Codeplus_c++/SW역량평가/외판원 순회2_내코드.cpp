@@ -37,5 +37,4 @@ int main() {
 		cout << min_cost;
 		return 0;
 	}
-
 }
