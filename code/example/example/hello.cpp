@@ -33,7 +33,7 @@ int main() {
 		else if (it->second >= 2 && it->second < 4) { m2 = 256; }
 		else if (it->second >= 4 && it->second < 8) { m2 = 128; }
 		else if (it->second >= 8 && it->second < 16) { m2 = 64;	}
-		else if (it->second >= 16 && it->second < 33) { m2 = 32; }
+		else if (it->second >= 16 && it->second < 32) { m2 = 32; }
 		else { m2 = 0; }
 
 		tot_money[i] = (m1 + m2) * 10000;
