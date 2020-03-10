@@ -1,46 +1,25 @@
-﻿// 카카오 코드 페스티벌 예선 - 상금헌터_15953.cpp
-#include<iostream>
+﻿#include<iostream>
 #include<vector>
-#include<utility>
+#include<algorithm>
 using namespace std;
+
 int main() {
-	int t, buf1, buf2, m1=0, m2=0;
-	cin >> t;
-
-	vector <pair <int, int>> grade;
-
-	vector <int> tot_money(t);
-
-	for (int i = 0; i < t; i++) {
-		cin >> buf1 >> buf2;
-		grade.push_back({ buf1, buf2 });
+	int n;
+	int buf = 0, max_sum = 0;
+	cin >> n;
+	vector <int> v(n);
+	for (int i = 0; i < n; i++) {
+		cin >> v[i];
 	}
-	int i = 0;
-	vector<pair<int, int>>::iterator it;
-	for (it = grade.begin(); it !=grade.end(); it++) {
+	sort(v.begin(), v.end());
+	do {
+		for (int i = 0; i < (n - 1); i++) {
+			buf += abs(v[i] - v[i + 1]);
+		}
+		max_sum = max(max_sum, buf);
+		buf = 0;
 
-		// 1회 대회
-		if (it->first == 1) { m1 = 500; }
-		else if (it->first >= 2 && it->first < 4) { m1 = 300; }
-		else if (it->first >= 4 && it->first < 7) { m1 = 200; }
-		else if (it->first >= 7 && it->first < 11) { m1 = 50; }
-		else if (it->first >= 11 && it->first < 16) { m1 = 30; }
-		else if (it->first >= 16 && it->first < 22) { m1 = 10; }
-		else { m1 = 0; }
-
-		// 2회 대회
-		if (it->second == 1) { m2 = 512; }
-		else if (it->second >= 2 && it->second < 4) { m2 = 256; }
-		else if (it->second >= 4 && it->second < 8) { m2 = 128; }
-		else if (it->second >= 8 && it->second < 16) { m2 = 64;	}
-		else if (it->second >= 16 && it->second < 32) { m2 = 32; }
-		else { m2 = 0; }
-
-		tot_money[i] = (m1 + m2) * 10000;
-		i++;
-	}
-	for (int i = 0; i < t; i++) {
-		cout << tot_money[i] << '\n';
-	}
+	} while (next_permutation(v.begin(), v.end()));
+	cout << max_sum;
 	return 0;
 }
