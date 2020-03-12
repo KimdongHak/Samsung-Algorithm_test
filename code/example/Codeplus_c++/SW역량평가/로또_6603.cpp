@@ -1,5 +1,4 @@
-ï»¿#include<iostream>
-#include<algorithm>
+#include<iostream>
 #include<vector>
 using namespace std;
 int main() {
@@ -12,7 +11,7 @@ int main() {
             cin >> s[i];
         }
         do {
-            // ìˆœì—´ ì¡°í•©
+            // ¼ø¿­ Á¶ÇÕ
             for (int i = 0; i < k; i++) {
                 cout << s[i] << " ";
             }
