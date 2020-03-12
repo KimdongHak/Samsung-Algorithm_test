@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include<vector>
 using namespace std;
 int go(int sum, int goal) {
@@ -15,7 +15,7 @@ int go(int sum, int goal) {
     return now;
 }
 int main() {
-    int t, i=0;
+    int t, i = 0;
     cin >> t;
     vector <int> result(t);
     while (t--) {
