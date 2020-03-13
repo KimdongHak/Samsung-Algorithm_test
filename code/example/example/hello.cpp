@@ -1,33 +1,33 @@
-﻿// 암호만들기_1759.cpp
+﻿//연산자끼워넣기_14888.cpp
+
 #include<iostream>
-#include<algorithm>
 #include<vector>
 using namespace std;
+int ansmax = 0, ansmin = 100000;
 
-int l, c;
+int solve(int cnt, vector <int>& A, int plus, int minus, int mult, int div) {
 
-void answer(int idx, vector<char> &buf,int cnt, int mo, int ja, string ans) {
-	if (cnt == l) {
-		if (mo >= 1 && ja >= 2)
-			cout << ans << '\n';
-		return;
-	}
-	if (idx == c)
-		return;
-	if (buf[idx] == 'a' || buf[idx] == 'e' || buf[idx] == 'i' || buf[idx] == 'o' || buf[idx] == 'u')
-		answer(idx + 1, buf, cnt + 1, mo + 1, ja, ans + buf[idx]);
-	else
-		answer(idx + 1, buf, cnt + 1, mo, ja + 1, ans + buf[idx]);
-	answer(idx + 1, buf, cnt, mo, ja, ans);
+
+	return ansmax, ansmin;
 }
-
 int main() {
-	cin >> l >> c;
-	vector <char> buf(c);
-	for (int i = 0; i < c; i++) 
-		cin >> buf[i];
 	
-	sort(buf.begin(), buf.end());
-	answer(0, buf, 0, 0, 0, "");
+	// 수의 개수 n
+	int n, result=0;
+	cin >> n;
+	vector <int> A(n);
+	vector <int> arith(4);
+
+	//숫자 입력
+	for (int i = 0; i < n; i++)
+		cin >> A[i];
+	//부호 입력
+	for (int i = 0; i < 4; i++)
+		cin >> arith[i];
+
+	solve(n, A, arith[0], arith[1], arith[2], arith[3]);
+
+	cout << ansmax << '\n';
+	cout << ansmin << '\n';
 	return 0;
 }
