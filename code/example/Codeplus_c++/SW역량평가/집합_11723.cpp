@@ -1,4 +1,4 @@
-ï»¿// 11723_ì§‘í•©.cpp - ì‹¤íŒ¨
+// 11723_ÁýÇÕ.cpp - ½ÇÆÐ
 
 #include<iostream>
 #include<vector>
@@ -8,9 +8,9 @@ int solve(string sent, int n) {
 	if (sent == "add")
 		S.push_back(n);
 	else if (sent == "remove") {
-		for (int i = 0; i < S.size();i++) {
+		for (int i = 0; i < S.size(); i++) {
 			if (S[i] == n) {
-				S.erase(S.begin()+i);
+				S.erase(S.begin() + i);
 			}
 		}
 	}
@@ -23,9 +23,9 @@ int solve(string sent, int n) {
 			else {
 				if (i == (S.size() - 1))
 					result.push_back(0);
-				else 
+				else
 					continue;
-				
+
 
 			}
 		}
@@ -65,7 +65,7 @@ int main() {
 		cin >> st >> num;
 		solve(st, num);
 	}
-	for (int i = 0; i < result.size();i++) {
+	for (int i = 0; i < result.size(); i++) {
 		cout << result[i] << '\n';
 	}
 	return 0;
