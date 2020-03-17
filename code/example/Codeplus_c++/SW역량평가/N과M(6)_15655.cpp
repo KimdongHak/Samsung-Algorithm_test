@@ -1,4 +1,4 @@
-ï»¿//15655_Nê³¼M(6).cpp - success
+//15655_N°úM(6).cpp - success
 #include<iostream>
 #include<algorithm>
 #include<vector>
