@@ -1,4 +1,4 @@
-ï»¿//15652_Nê³¼M(4).cpp
+//15652_N°úM(4).cpp
 #include<iostream>
 using namespace std;
 bool check[10];
@@ -19,7 +19,7 @@ void solve(int idx, int start, int n, int m) {
 		solve(idx + 1, i, n, m);
 		check[i] = false;
 	}
-	
+
 }
 int main() {
 	int N, M;
