@@ -1,11 +1,11 @@
-ï»¿//Nê³¼M(5)_15654.cpp - success
+//N°úM(5)_15654.cpp - success
 #include<iostream>
 #include<vector>
 #include<algorithm>
 using namespace std;
 bool check[10];
 int num[10];
-void solve(int idx, vector <int> &buf,int n, int m) {
+void solve(int idx, vector <int>& buf, int n, int m) {
 	if (idx == m) {
 		for (int i = 0; i < m; i++) {
 			cout << num[i];
