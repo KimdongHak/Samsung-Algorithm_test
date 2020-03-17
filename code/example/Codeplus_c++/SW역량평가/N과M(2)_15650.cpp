@@ -1,4 +1,4 @@
-ï»¿//15650_Nê³¼M(2).cpp
+//15650_N°úM(2).cpp - success
 #include<iostream>
 using namespace std;
 bool check[10];
@@ -16,7 +16,7 @@ void solve(int idx, int start, int n, int m) {
 		if (check[i]) continue;
 		check[i] = true;
 		num[idx] = i;
-		solve(idx + 1, i+1,n, m);
+		solve(idx + 1, i + 1, n, m);
 		check[i] = false;
 
 	}
@@ -24,6 +24,6 @@ void solve(int idx, int start, int n, int m) {
 int main() {
 	int N, M;
 	cin >> N >> M;
-	solve(0, 1,N, M);
+	solve(0, 1, N, M);
 	return 0;
 }
