@@ -1,4 +1,4 @@
-//15649_N°úM(1).cpp
+//15649_N°úM(3).cpp
 #include<iostream>
 using namespace std;
 bool check[10];
@@ -13,7 +13,7 @@ void solve(int idx, int n, int m) {
 		return;
 	}
 	for (int i = 1; i <= n; i++) {
-		if (check[i]) continue;
+		//if (check[i]) continue;
 		check[i] = true;
 		a[idx] = i;
 		solve(idx + 1, n, m);
