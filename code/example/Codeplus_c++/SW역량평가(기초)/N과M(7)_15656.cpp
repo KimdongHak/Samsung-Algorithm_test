@@ -1,10 +1,10 @@
-﻿#include<iostream>
+#include<iostream>
 #include<vector>
 #include<algorithm>
 using namespace std;
 bool check[10];
 int num[10];
-void solve(vector <int> &buf, int idx, int n, int m) {
+void solve(vector <int>& buf, int idx, int n, int m) {
 	if (idx == m) {
 		for (int i = 0; i < m; i++) {
 			cout << num[i];
