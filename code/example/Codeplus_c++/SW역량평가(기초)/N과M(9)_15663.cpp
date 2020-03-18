@@ -1,4 +1,6 @@
-﻿#include <iostream>
+//BOJ Algorithm lecture code
+
+#include <iostream>
 #include <algorithm>
 #include <vector>
 using namespace std;
