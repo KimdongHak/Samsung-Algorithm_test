@@ -1,4 +1,3 @@
-﻿//수이어쓰기1_1748.cpp
 #include <iostream>
 using namespace std;
 int main() {
