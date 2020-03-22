@@ -1,3 +1,3 @@
 # Algorithm_Practice
 
-This repo is my own repo to code training.
+This repo is my own repo for code training.
