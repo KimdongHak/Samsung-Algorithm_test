@@ -1,17 +1,7 @@
-﻿//수이어쓰기1_1748.cpp
-#include <iostream>
+﻿#include<iostream>
+#include<algorithm>
+#include<cstring>
+#include<cstdio>
+#include<vector>
+#include<queue>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    long long ans = 0;
-    for (int start = 1, len = 1; start <= n; start *= 10, len++) {
-        int end = start * 10 - 1;
-        if (end > n) {
-            end = n;
-        }
-        ans += (long long)(end - start + 1) * len;
-    }
-    cout << ans << '\n';
-    return 0;
-}
