@@ -45,7 +45,7 @@ int main() {
             }
         }
     }
-    printf("%d\n", cnt);
+    printf("%d\n", cnt); // 단지의 개수
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             ans[group[i][j]] += 1;
