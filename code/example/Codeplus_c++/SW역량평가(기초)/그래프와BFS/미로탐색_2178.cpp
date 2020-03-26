@@ -1,4 +1,4 @@
-ï»¿
+// Á÷Á¢ Ç¬ ¹®Á¦ - success
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4996)
 #include<iostream>
@@ -26,7 +26,7 @@ void bfs(int x, int y) {
 			if (0 <= nx && nx < n && 0 <= ny && ny < m) {
 				if (map[nx][ny] == 1 && check[nx][ny] == 0) {
 					q.push(make_pair(nx, ny));
-					check[nx][ny] = check[x][y]+1;
+					check[nx][ny] = check[x][y] + 1;
 				}
 			}
 		}
@@ -48,6 +48,6 @@ int main() {
 				bfs(i, j);
 		}
 	}
-	printf("%d\n", check[n-1][m-1]);
+	printf("%d\n", check[n - 1][m - 1]);
 	return 0;
 }
