@@ -1,4 +1,4 @@
-﻿// 1463.cpp
+// 1463.cpp
 #include<iostream>
 using namespace std;
 int d[1000001];
