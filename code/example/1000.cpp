@@ -3,7 +3,6 @@ using namespace std;
 int main() {
 	int a, b;
 	cin >> a >> b;
-	cout.precision(9);
-	cout << std::fixed << (double)a / b << '\n';
+	cout << a + b << '\n';
 	return 0;
 }

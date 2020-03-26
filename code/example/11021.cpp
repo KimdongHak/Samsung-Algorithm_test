@@ -1,4 +1,4 @@
-﻿#include<iostream>
+#include<iostream>
 #include<vector>
 using namespace std;
 int main() {
@@ -11,7 +11,7 @@ int main() {
 		result[i] = a + b;
 	}
 	for (int i = 0; i < t; i++) {
-		cout << "Case #" << i+1 << ": " << result[i] << '\n';
+		cout << "Case #" << i + 1 << ": " << result[i] << '\n';
 	}
 	return 0;
 }
