@@ -1,4 +1,4 @@
-﻿#include <cstdio>
+#include <cstdio>
 #include <queue>
 using namespace std;
 int a[1000][1000];
