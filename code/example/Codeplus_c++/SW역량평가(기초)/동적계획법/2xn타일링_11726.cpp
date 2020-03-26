@@ -1,4 +1,4 @@
-﻿//11726.cpp
+//11726.cpp
 #include<cstdio>
 #pragma warning(disable:4996)
 using namespace std;
