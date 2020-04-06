@@ -39,5 +39,6 @@ int main() {
         }
     }
     cout << dist[k] << '\n';
+
     return 0;
 }
